@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #060606;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 50px;
+  color: #262626;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0D0D0D;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7B8493;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7B8493;
+}
+
+.btn-primary {
+  color: black;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 20px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4976365546) 34%, rgba(255, 255, 255, 0) 64%, rgba(255, 255, 255, 0) 100%);
+}
+header .header-content {
+  display: flex;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header .header-content > a {
+  flex-basis: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+}
+header .header-content > a img {
+  height: 200%;
+  width: 200%;
+  object-fit: cover;
+  position: relative;
+  right: 100px;
+  bottom: 100px;
+}
+header .header-content nav {
+  flex-basis: 50%;
+  display: flex;
+  background-color: #262626;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+header .header-content nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+header .header-content nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: -1px;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  padding: 50px 0;
+}
+footer .footer-content {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+footer .footer-content .footer-section {
+  flex-basis: 30%;
+}
+footer .footer-content .footer-section h4 {
+  color: white;
+}
+footer .footer-content .footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+main .cta {
+  flex-basis: 100%;
+  display: flex;
+}
+main .cta .cta-content {
+  display: flex;
+  flex-basis: 100%;
+}
+main .cta .cta-content figure {
+  display: flex;
+  flex-basis: 100%;
+}
+main .cta .cta-content figure img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.advantages {
+  display: flex;
+  flex-basis: 100%;
+  background-color: #262626;
+  height: 200px;
+  align-items: center;
+}
+.advantages .advantages-content {
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .advantages-content .advantages-item {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+}
+.advantages .advantages-content .advantages-item h4 {
+  color: white;
+}
+.advantages .advantages-content .advantages-item img {
+  height: 30px;
+  padding-right: 15px;
+}
+
+.programmation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 50px 0;
+}
+.programmation .programmation-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.programmation .programmation-content h2 {
+  flex-basis: 100%;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 30px 0;
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+.programmation .programmation-content > div {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #262626;
+  padding: 80px 40px;
+  border-radius: 5px;
+}
+
+.prog-card-container {
+  display: flex;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.prog-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  height: 300px;
+  border-radius: 5px;
+}
+.prog-card > a {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.prog-card > a .shader {
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(320deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6488970588) 54%, rgba(255, 255, 255, 0.4416141457) 94%, rgba(255, 255, 255, 0) 100%);
+}
+.prog-card > a figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.prog-card > a figure > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.prog-card > a .card_infos {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 2;
+}
+.prog-card > a .card_infos > p {
+  font-weight: 200;
+}
+.prog-card > a .btn-primary {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  font-weight: bold;
+  cursor: pointer;
+}
+.prog-card > a .card_time {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+}
+.prog-card > a .card_time .card_date {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.128);
+  padding: 10px;
+  border-radius: 5px;
+}
+.prog-card > a .card_time .card_date > p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.prog-card > a .card_time .card_hours {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prog-card > a .card_time .card_hours span {
+  margin-top: 5px;
+  border: solid 2px white;
+  border-radius: 5px;
+  padding: 0 11px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-bottom: 100px;
+}
+.blog .blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog .blog-content h2 {
+  flex-basis: 100%;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 30px 0;
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+.blog .blog-content > div {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #262626;
+  padding: 80px 40px;
+  border-radius: 5px;
+}
+
+.blog-card_container {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-card_container .blog-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  height: 300px;
+  border-radius: 5px;
+}
+.blog-card_container .blog-card > a {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+.blog-card_container .blog-card > a .shader, .blog-card_container .blog-card > a figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+.blog-card_container .blog-card > a .shader {
+  z-index: 2;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4976365546) 34%, rgba(255, 255, 255, 0) 64%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5px;
+}
+.blog-card_container .blog-card > a figure > img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.blog-card_container .blog-card > a .blog-card_infos {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+.blog-card_container .blog-card > a .blog-card_infos h4 {
+  color: whitesmoke;
+  font-weight: 300;
+}
+.blog-card_container .blog-card > a .blog-card_infos > p {
+  font-size: 10px;
+  font-weight: 200;
+  flex-basis: 80%;
+}
+
+.article-blog {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.article-blog .broadcrumb {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+}
+.article-blog .broadcrumb .shader {
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.4976365546) 34%, rgba(255, 255, 255, 0) 64%, rgba(255, 255, 255, 0) 100%);
+}
+.article-blog .broadcrumb > figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+}
+.article-blog .broadcrumb > figure img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 40% 20%;
+}
+.article-blog .broadcrumb .broadcrumb-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  margin-top: 250px;
+}
+.article-blog .broadcrumb .broadcrumb-content h1 {
+  color: white;
+  flex-basis: 100%;
+}
+.article-blog .broadcrumb .broadcrumb-content p {
+  color: white;
+}
+.article-blog .blog-article_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  flex-basis: 100%;
+}
+.article-blog .blog-article_content .blog-article_content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-blog .blog-article_content .blog-article_content-container .row-reverse {
+  flex-direction: row-reverse;
+}
+.article-blog .blog-article_content .blog-article_content-container h2 {
+  font-weight: 600;
+  margin: 100px 0;
+  flex-basis: 100%;
+}
+.article-blog .blog-article_content .blog-article_content-container .article-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.article-blog .blog-article_content .blog-article_content-container .article-section > div {
+  flex-basis: 45%;
+}
+.article-blog .blog-article_content .blog-article_content-container .article-section > div img {
+  width: 100%;
+}
+.article-blog .blog-article_content .blog-article_content-container .article-section > div h3 {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
