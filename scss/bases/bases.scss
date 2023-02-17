@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 * {
     box-sizing: border-box;
 }
@@ -7,6 +9,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
+   
 }
 
 h1, h2, h3, h4, h5, h6 {
