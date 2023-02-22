@@ -178,6 +178,68 @@ header .header-content nav ul li a {
   font-size: 18px;
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    display: none;
+  }
+  body {
+    position: relative;
+  }
+  header {
+    position: initial;
+    height: 200px;
+    background-color: white;
+    background: none;
+  }
+  header .header-content {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header .header-content > a {
+    flex-basis: 100%;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  header .header-content > a img {
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  header .header-content nav {
+    background-color: white;
+    flex-basis: 100%;
+    padding: 20px 10px;
+  }
+  header .header-content nav ul li a {
+    font-size: 12px;
+    color: black;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    position: initial;
+    height: 200px;
+    background-color: white;
+  }
+  header .header-content {
+    align-items: center;
+  }
+  header .header-content > a {
+    height: 100px;
+  }
+  header .header-content > a img {
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+  }
+  header .header-content nav ul li a {
+    font-size: 10px;
+  }
+}
 footer {
   display: flex;
   width: 100%;
@@ -205,6 +267,14 @@ footer .footer-content .footer-section ul li a {
   font-size: 12px;
 }
 
+@media screen and (max-width: 1000px) {
+  footer .footer-content {
+    padding: 20px;
+  }
+  footer .footer-content .footer-section {
+    flex-basis: 100%;
+  }
+}
 main {
   display: flex;
   width: 100%;
@@ -257,6 +327,38 @@ main .cta .cta-content figure img {
   padding-right: 15px;
 }
 
+@media screen and (max-width: 900px) {
+  .advantages {
+    overflow: hidden;
+  }
+  .advantages .advantages-content {
+    overflow-x: auto;
+  }
+  .advantages .advantages-content .advantages-item {
+    flex-basis: 100%;
+    min-width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .advantages .advantages-content .advantages-item h4 {
+    font-size: 11px;
+  }
+  .advantages .advantages-content .advantages-item p {
+    font-size: 8px;
+  }
+  .blog .blog-content > div, .programmation .programmation-content > div {
+    padding: 30px 20px !important;
+  }
+  .prog-card, .blog-card_container .blog-card {
+    flex-basis: 100% !important;
+    margin-bottom: 20px;
+  }
+  .nav-title {
+    font-size: 18px !important;
+    position: static !important;
+    padding-left: 20px;
+  }
+}
 .programmation {
   display: flex;
   flex-wrap: wrap;
@@ -574,6 +676,14 @@ main .cta .cta-content figure img {
   font-weight: 200;
 }
 
+@media screen and (max-width: 900px) {
+  .article-blog {
+    padding: 20px;
+  }
+  .article-blog .blog-article_content .blog-article_content-container .article-section > div {
+    flex-basis: 100%;
+  }
+}
 .film-page {
   display: flex;
   flex-wrap: wrap;
@@ -789,6 +899,26 @@ main .cta .cta-content figure img {
 .faq div p {
   font-weight: 200;
   font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .faq, .reservation_system, .about-film, .img-film-container {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+  .faq h4, .reservation_system h4, .about-film h4, .img-film-container h4 {
+    font-size: 10px !important;
+    min-width: 70px;
+  }
+  .film-page {
+    margin-top: 30px;
+  }
+  .about-film .infos-time ul {
+    flex-basis: 100%;
+  }
+  .reservation_system, .film-page .film-infos-section {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

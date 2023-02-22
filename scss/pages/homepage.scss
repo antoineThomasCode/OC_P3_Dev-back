@@ -48,6 +48,39 @@ main .cta {
         }
     } 
 }
+@media screen and (max-width: 900px) {
+    .advantages {
+        overflow: hidden; 
+        .advantages-content {
+            overflow-x: auto;
+            .advantages-item {
+                flex-basis: 100%;
+                min-width: 100%;
+                justify-content: center;
+                padding: 20px 0;
+                h4 {
+                    font-size: 11px;
+                }
+                p {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .blog .blog-content > div, .programmation .programmation-content > div {
+        padding: 30px 20px !important;
+    }
+    .prog-card, .blog-card_container .blog-card  {
+        flex-basis: 100% !important;
+        margin-bottom: 20px;
+    }
+    .nav-title {
+        font-size: 18px !important;
+        position:static !important;
+        padding-left: 20px;
+    }
+    
+}
 .programmation {
     display: flex;
     flex-wrap: wrap;

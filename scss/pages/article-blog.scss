@@ -93,3 +93,12 @@
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .article-blog {
+        padding: 20px;
+
+    }
+    .article-blog .blog-article_content .blog-article_content-container .article-section > div {
+        flex-basis: 100%;
+    }
+}
